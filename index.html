@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="cl();">dong</button>
+    <button onclick="op();">mo</button>
+</body>
+</html>
+<script type="text/javascript">
+    document.write("<br/>do cao window: " + window.innerHeight);
+    document.write("<br/>chieu rong window: " + window.innerWidth);
+
+    document.write("<br/>chieu cao screnn la: "+ screen.height);
+    document.write("<br/>con lai: " + screen.availHeight);
+
+    document.write("<br/>trong chieu rong screnn la: "+ screen.width);
+    document.write("<br/>con lai: " + screen.availWidth)
+
+    document.write("<br/>bang mau: "+ screen.colorDepth);
+
+
+    document.write("<br/>appCodeName: " + navigator.appCodeName + "<br>");
+    document.write("appName: " + navigator.appName +"<br>");
+    document.write("version: " + navigator.version + "<br>");
+    document.write("cookieEnabled: " + navigator.cookieEnabled);
+
+    document.write("host: " + location.host + "<br>");
+    document.write("hostname: " + location.hostname + "<br>");
+    document.write("href: " + location.href + "<br>");
+    document.write("pathname: " + location.pathname + "<br>");
+    document.write("port: " + location.port + "<br>");
+    document.write("protocol: " + location.protocol + "<br>");
+    var trangweb;
+    function op(){
+        trangweb = window.open("");
+        trangweb.moveTo(0,0);
+        trangweb .resizeTo(500,600);
+    }
+    function cl(){
+        trangweb.close();
+    }
+</script>
